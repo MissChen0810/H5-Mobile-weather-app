@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable,maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="weather">
+    <!--    导航-->
+    <div class="nav">
+<!--        定位-->
+        <div class="location">
+            <span class="location-icon ico"></span>
+            <span id="location-city" class="location-city">杭州</span>
+        </div>
+<!--        搜索-->
+        <div class="search">
+            <input type="text" class="search-box" placeholder="请输入城市名称">
+            <span class="search-icon"></span>
+        </div>
+
+<!--        下拉菜单-->
+        <div class="list">
+            <div class="list-title">
+                <span class="all-delete">全部删除</span>
+                <span class="close">关闭</span>
+            </div>
+            <div class="list-tag">
+                <span>广州<i class="close-icon"></i></span>
+                <span>深圳<i class="close-icon"></i></span>
+                <span>珠海<i class="close-icon"></i></span>
+                <span>广州<i class="close-icon"></i></span>
+                <span>深圳<i class="close-icon"></i></span>
+                <span>珠海<i class="close-icon"></i></span>
+
+            </div>
+
+        </div>
+    </div>
+
+<!--        主体内容-->
+    <div class="main">
+<!--        实况天气-->
+        <div class="weather-status">
+            <div class="weather-status-box">
+                <div class="weather-data">
+                    <span class="data">2022-03-21</span>
+                    <span>星期一</span>
+                </div>
+                <div class="weather-tem">
+                    <div class="tem">20℃</div>
+                    <div class="weather-tem-icon">
+                        <div class="box">
+                            <div class="box-icon">1</div>
+                            <div class="box-text">晴</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <span>东北风</span>
+                    <span>风速:30km/h</span>
+                    <span>风力:2级</span>
+                </div>
+            </div>
+        </div>
+
+<!--        24小时天气-->
+        <div class="hours-weather">
+<!--            标题-->
+            <div class="hours-title">24小时天气</div>
+<!--            每小时的天气-->
+            <div class="hours-box">
+                <ul class="hours">
+                    <li>
+                        <div>01:00</div>
+                        <div class="hours-icon"></div>
+                        <div>9℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>02:00</div>
+                        <div class="hours-icon"></div>
+                        <div>11℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>03:00</div>
+                        <div class="hours-icon"></div>
+                        <div>10℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>04:00</div>
+                        <div class="hours-icon"></div>
+                        <div>10℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>05:00</div>
+                        <div class="hours-icon"></div>
+                        <div>11℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>06:00</div>
+                        <div class="hours-icon"></div>
+                        <div>11℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>07:00</div>
+                        <div class="hours-icon"></div>
+                        <div>13℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>08:00</div>
+                        <div class="hours-icon"></div>
+                        <div>13℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>09:00</div>
+                        <div class="hours-icon"></div>
+                        <div>14℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>10:00</div>
+                        <div class="hours-icon"></div>
+                        <div>15℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>11:00</div>
+                        <div class="hours-icon"></div>
+                        <div>23℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>12:00</div>
+                        <div class="hours-icon"></div>
+                        <div>15℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>13:00</div>
+                        <div class="hours-icon"></div>
+                        <div>16℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>14:00</div>
+                        <div class="hours-icon"></div>
+                        <div>17℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>15:00</div>
+                        <div class="hours-icon"></div>
+                        <div>26℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>16:00</div>
+                        <div class="hours-icon"></div>
+                        <div>23℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>17:00</div>
+                        <div class="hours-icon"></div>
+                        <div>24℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>18:00</div>
+                        <div class="hours-icon"></div>
+                        <div>24℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>19:00</div>
+                        <div class="hours-icon"></div>
+                        <div>23℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>20:00</div>
+                        <div class="hours-icon"></div>
+                        <div>16℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>21:00</div>
+                        <div class="hours-icon"></div>
+                        <div>18℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>22:00</div>
+                        <div class="hours-icon"></div>
+                        <div>18℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>23:00</div>
+                        <div class="hours-icon"></div>
+                        <div>21℃</div>
+                        <div>北风</div>
+                    </li>
+                    <li>
+                        <div>24:00</div>
+                        <div class="hours-icon"></div>
+                        <div>20℃</div>
+                        <div>北风</div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+<!--        未来9天天气-->
+        <div class="future-weather">
+<!--            标题-->
+            <div class="future-title">未来9天天气</div>
+
+<!--            未来天气-->
+            <div class="future-weather-box">
+                <div class="future-item">
+                    <span class="future-data">03/22</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">15℃~25℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/23</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">17℃~20℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/24</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">24℃~27℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/25</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">13℃~22℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/26</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">18℃~20℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/27</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">27℃~30℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/28</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">14℃~27℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/29</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">20℃~22℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+                <div class="future-item">
+                    <span class="future-data">03/30</span>
+                    <span class="future-icon">
+                        <i class="f-icon"></i>
+                    </span>
+                    <span class="future-tem">15℃~26℃</span>
+                    <span class="future-wind">无持续风向</span>
+                </div>
+
+            </div>
+        </div>
+
+<!--        空气质量与生活指数-->
+        <div class="air-life-box">
+            <div class="air-life">
+    <!--            标题-->
+                <div class="air-lift-title">空气质量与生活指数</div>
+
+    <!--            列表-->
+                <ul class="air-life-list">
+                     <li>
+                         <span class="t1">二氧化硫</span>
+                         <span class="t2">12.4</span>
+                     </li>
+                    <li>
+                        <span class="t1">二氧化硫</span>
+                        <span class="t2">12.4</span>
+                    </li>
+                    <li>
+                        <span class="t1">二氧化硫</span>
+                        <span class="t2">12.4</span>
+                    </li>
+                    <li>
+                        <span class="t1">二氧化硫</span>
+                        <span class="t2">12.4</span>
+                    </li>
+                    <li>
+                        <span class="t1">二氧化硫</span>
+                        <span class="t2">12.4</span>
+                    </li>
+                    <li>
+                        <span class="t1">二氧化硫</span>
+                        <span class="t2">12.4</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!--        加载提示-->
+    <div id="tip" class="tip">
+        <div class="tip-line">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+
+    </div>
+
+</div>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--<script src="js/index.js"></script>-->
+</body>
+</html>
